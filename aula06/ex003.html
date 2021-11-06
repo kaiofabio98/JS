@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+        body {
+            background-color: rgb(109, 109, 202);
+            color: white; /*Comnetário CSS*/
+            font: normal 20pt Arial;
+        }
+        h1 {
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1><!--Comentário HTML-->
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //Transformação de String para Number qualquer
+        var n2 = Number(window.prompt('Digite outro número: ')) //Transformação de String para Number qualquer
+        var soma = n1 + n2 //Concatenação
+        window.alert('A soma dos valores é ' + String(soma)) //Converter de Number  para String
+        window.alert(`A soma entre ${n1} e ${n2} é igual ${String(soma)}`) //Usando template string (crase necessária)
+        // number + number para adição
+        // string + string para concatenação
+    </script>
+</body>
+</html>

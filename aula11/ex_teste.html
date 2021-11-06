@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            font: normal 18pt Arial;
+        }
+        div#resposta{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    <input type='text' name='país' id='país'>
+    <input type='button' value='Identificar' onclick="verificar()">
+    <div id='resposta'>Nacionalidade</div>
+    <script>
+        function verificar(){
+            var nac = window.document.querySelector('input#país')
+            var res = window.document.querySelector('div#resposta')
+            res.innerHTML = 'Você é: '
+            if(nac.value == 'Brasil'){
+            res.innerHTML += '<strong>BRASILEIRO</strong>'
+            }else{
+            res.innerHTML += '<strong>ESTRANGEIRO</strong>'
+            }
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+Diferenças HTML, CSS, JS:
+	html: Esqueleto
+	CSS: Pele
+	JScript: Músculos
+===========================================================================================================================
+Comentários:
+\* *\ 	-> CSS
+<!-- -->-> html
+\*, //	-> JScript
+===========================================================================================================================
+Oeradores:
+<	//menor
+>	//maior
+<=	//menor igual
+>=	//maior igual
+==	//igual
+!=	//diferente
+===	//igual correlacional
+!==	//diferente correlacional
+!	//não
+&&	//e
+||	//ou
+?:	//teste?true:false
+===========================================================================================================================
+Comandos:
+window.prompt() //Cria uma janela que tem uma caixa de texto
+window.alert() //Cria uma janela de alerta
+window.confirm() //Cria uma janela de "OK" e "Cancel"
+
+Number() //Transforma de String para Number qualquer (Float, Int)
+String() //Transforma de Number para String
+
+document.write() //Escreve algo no body do documento
+`~palavra~ ${}` //Uso de template String (Exclui a necessidade de multiplas concatenações com +)
+
+.toUpperCase() //Transforma toda a string para maiúsucla  
+.toLowerCase() //Transforma toda a string para minúsucla 
+
+.length //Retorna o tamanho da string
+
+.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'}) //Transforma uma variável para um formato de moeda desejado
+
+.toFixed(2) //Transforma a variável para 2 casas decimais
+
+.value //Pega só o que está escrito na variável, seja number ou string
+
+.setAttribute('~atributo que se quer mudar~' '~modificação do atributo~') //altera um atributo de um elemento
+===========================================================================================================================
+DOM:
+Document Object Model //Conjunto de Objetos dentro do navegador que dá acessoa  a componentes internos do web-site
+
+		Window
+		  |
+		  V
+Location	Document	History
+		  |
+		  V		
+		 HTML
+		  /\
+		 V  V
+	      Head  Body
+		 ...
+	
+Para buscar umm elemento dentro de cada linha de hierarquia, usa-se o . para separar
+
+Ex:
+window.document.getElementsByName('')[] //Pega o elemento pelo nome da tag
+window.document.getElementsByTagName('')[] //Pega o elemento pelo nome atribuído
+window.document.getElementById('') //Pega o elemento pelo ID atribuído na tag
+window.document.getElementClassName('') //Pega o elemento pelo nome da classe
+window.document.querySelector('tag#id'||'tag.class') //Método de Seleção mais atual
